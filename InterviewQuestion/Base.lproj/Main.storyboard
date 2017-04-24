@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InterviewQuestion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWw-Gi-UPX">
+                                <rect key="frame" x="56" y="395" width="263" height="41"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="RANDOMIZE">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-Cb-gEb">
+                                <rect key="frame" x="20" y="40" width="335" height="335"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="scB-FK-81f">
+                                        <rect key="frame" x="10" y="10" width="315" height="315"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text"> Within this tilesContainerView, create a grid of 16 (4x4) equally sized buttons.
+ 
+ Each button should have an "on" and "off" state, signified by a background color.
+ 
+ Tapping a button should toggle its state, AND its immediate neighbors' states.
+ 
+ When the randomize button is tapped, the states of all of the buttons should be randomized.
+
+Remove this TextView =)</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="scB-FK-81f" firstAttribute="top" secondItem="7pC-Cb-gEb" secondAttribute="top" constant="10" id="6Jv-WZ-Vz4"/>
+                                    <constraint firstAttribute="bottom" secondItem="scB-FK-81f" secondAttribute="bottom" constant="10" id="RwQ-IW-3hG"/>
+                                    <constraint firstItem="scB-FK-81f" firstAttribute="leading" secondItem="7pC-Cb-gEb" secondAttribute="leading" constant="10" id="Vwj-FU-3vS"/>
+                                    <constraint firstAttribute="width" secondItem="7pC-Cb-gEb" secondAttribute="height" multiplier="1:1" id="WTe-zY-bl2"/>
+                                    <constraint firstAttribute="trailing" secondItem="scB-FK-81f" secondAttribute="trailing" constant="10" id="bbl-mP-UGu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7pC-Cb-gEb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="04g-1A-6Gu"/>
+                            <constraint firstItem="7pC-Cb-gEb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Ln9-Y6-u68"/>
+                            <constraint firstItem="gWw-Gi-UPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QNF-Ey-voB"/>
+                            <constraint firstItem="gWw-Gi-UPX" firstAttribute="top" secondItem="7pC-Cb-gEb" secondAttribute="bottom" constant="20" id="U0S-oV-mnQ"/>
+                            <constraint firstItem="gWw-Gi-UPX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="pVj-dO-vRf"/>
+                            <constraint firstItem="7pC-Cb-gEb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="sa6-b7-5Ll"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gWw-Gi-UPX" secondAttribute="bottom" constant="150" id="xyT-22-taD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tilesContainerView" destination="7pC-Cb-gEb" id="gOu-wa-BwP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
