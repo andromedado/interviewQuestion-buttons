@@ -34,14 +34,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-Cb-gEb">
                                 <rect key="frame" x="20" y="40" width="335" height="335"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="scB-FK-81f">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="scB-FK-81f">
                                         <rect key="frame" x="10" y="10" width="315" height="315"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text"> Within this tilesContainerView, create a grid of 16 (4x4) equally sized buttons.
  
  Each button should have an "on" and "off" state, signified by a background color.
  
- Tapping a button should toggle its state, AND its immediate neighbors' states.
+ Tapping a button should toggle its state, AND its immediate neighbors' states. (non-diagonal immediate neighbors)
  
  When the randomize button is tapped, the states of all of the buttons should be randomized.
 
