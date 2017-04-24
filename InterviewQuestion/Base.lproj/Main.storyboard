@@ -37,7 +37,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="scB-FK-81f">
                                         <rect key="frame" x="10" y="10" width="315" height="315"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text"> Within this tilesContainerView, create a grid of 16 (4x4) equally sized buttons.
+                                        <string key="text"> Within this tilesContainerView, create a grid of 9 (3x3) equally sized buttons.
  
  Each button should have an "on" and "off" state, signified by a background color.
  
@@ -45,7 +45,7 @@
  
  When the randomize button is tapped, the states of all of the buttons should be randomized.
 
-Remove this TextView =)</string>
+Remove this TextView (there's a copy of the instructions in the view controller)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>

@@ -12,6 +12,7 @@
 		73A770911EAE49F3007A9D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A7708F1EAE49F3007A9D6F /* Main.storyboard */; };
 		73A770931EAE49F3007A9D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A770921EAE49F3007A9D6F /* Assets.xcassets */; };
 		73A770961EAE49F3007A9D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A770941EAE49F3007A9D6F /* LaunchScreen.storyboard */; };
+		73C888591EAE7F3000AF79CD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 73C888581EAE7F3000AF79CD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		73A770921EAE49F3007A9D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73A770951EAE49F3007A9D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73A770971EAE49F3007A9D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C888581EAE7F3000AF79CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		73A7708A1EAE49F3007A9D6F /* InterviewQuestion */ = {
 			isa = PBXGroup;
 			children = (
+				73C888581EAE7F3000AF79CD /* README.md */,
 				73A7708B1EAE49F3007A9D6F /* AppDelegate.swift */,
 				73A7708D1EAE49F3007A9D6F /* ViewController.swift */,
 				73A7708F1EAE49F3007A9D6F /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C888591EAE7F3000AF79CD /* README.md in Sources */,
 				73A7708E1EAE49F3007A9D6F /* ViewController.swift in Sources */,
 				73A7708C1EAE49F3007A9D6F /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +306,7 @@
 				73A7709C1EAE49F3007A9D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

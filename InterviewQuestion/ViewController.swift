@@ -11,7 +11,7 @@ import UIKit
 
 /**
  
- Within the tilesContainerView, create a grid of 16 (4x4) equally sized buttons.
+ Within the tilesContainerView, create a grid of 9 (3x3) equally sized buttons.
  
  Each button should have an "on" and "off" state, signified by a background color.
  
