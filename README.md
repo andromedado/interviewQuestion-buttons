@@ -8,4 +8,6 @@
  
 - When the randomize button is tapped, the states of all of the buttons should be randomized.
 
-![screenshot](/images/screenshot.png)
+## Demo
+
+![demo](/images/interviewQuestionDemo.gif)
