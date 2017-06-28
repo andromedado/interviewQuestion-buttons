@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739E951C1F03E83200D6C430 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E951B1F03E83200D6C430 /* GameViewController.m */; };
 		73A7708C1EAE49F3007A9D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7708B1EAE49F3007A9D6F /* AppDelegate.swift */; };
-		73A7708E1EAE49F3007A9D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7708D1EAE49F3007A9D6F /* ViewController.swift */; };
 		73A770911EAE49F3007A9D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A7708F1EAE49F3007A9D6F /* Main.storyboard */; };
 		73A770931EAE49F3007A9D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A770921EAE49F3007A9D6F /* Assets.xcassets */; };
 		73A770961EAE49F3007A9D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A770941EAE49F3007A9D6F /* LaunchScreen.storyboard */; };
@@ -16,9 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		739E95191F03E83200D6C430 /* InterviewQuestion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InterviewQuestion-Bridging-Header.h"; sourceTree = "<group>"; };
+		739E951A1F03E83200D6C430 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		739E951B1F03E83200D6C430 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		73A770881EAE49F3007A9D6F /* InterviewQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A7708B1EAE49F3007A9D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73A7708D1EAE49F3007A9D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73A770901EAE49F3007A9D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73A770921EAE49F3007A9D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73A770951EAE49F3007A9D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +59,14 @@
 			isa = PBXGroup;
 			children = (
 				73C888581EAE7F3000AF79CD /* README.md */,
-				73A7708B1EAE49F3007A9D6F /* AppDelegate.swift */,
-				73A7708D1EAE49F3007A9D6F /* ViewController.swift */,
 				73A7708F1EAE49F3007A9D6F /* Main.storyboard */,
+				739E951A1F03E83200D6C430 /* GameViewController.h */,
+				739E951B1F03E83200D6C430 /* GameViewController.m */,
+				73A7708B1EAE49F3007A9D6F /* AppDelegate.swift */,
 				73A770921EAE49F3007A9D6F /* Assets.xcassets */,
 				73A770941EAE49F3007A9D6F /* LaunchScreen.storyboard */,
 				73A770971EAE49F3007A9D6F /* Info.plist */,
+				739E95191F03E83200D6C430 /* InterviewQuestion-Bridging-Header.h */,
 			);
 			path = InterviewQuestion;
 			sourceTree = "<group>";
@@ -100,6 +104,7 @@
 					73A770871EAE49F3007A9D6F = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = KTWP79UZ95;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739E951C1F03E83200D6C430 /* GameViewController.m in Sources */,
 				73C888591EAE7F3000AF79CD /* README.md in Sources */,
-				73A7708E1EAE49F3007A9D6F /* ViewController.swift in Sources */,
 				73A7708C1EAE49F3007A9D6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,11 +270,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
 				INFOPLIST_FILE = InterviewQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1stdibs.utils.InterviewQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InterviewQuestion/InterviewQuestion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,11 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
 				INFOPLIST_FILE = InterviewQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1stdibs.utils.InterviewQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InterviewQuestion/InterviewQuestion-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
